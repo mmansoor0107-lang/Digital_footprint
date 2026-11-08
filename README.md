@@ -20,11 +20,11 @@ About: Information about digital carbon footprint.
 
 Calculator: Estimate the environmental effects of your digital activities.
 
-Cleanup: Checklist of simple things you can do to cut down digital pollution.
-
 Quiz: How well did you pay attention?
 
-Pledge: Make choices that help protect the environment.
+Challenges: Complete simple digital sustainability tasks to earn points and reduce your environmental impact.
+
+Leaderboard: Compare your points with other users and see who ranks highest in completing sustainability challenges.
 
 Technologies We Intend to Use:
 
