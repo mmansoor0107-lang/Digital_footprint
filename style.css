@@ -1,0 +1,265 @@
+/* ==================================
+   SHARED STYLES - Mansoor
+   ================================== */
+
+/* General styling */
+
+body {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Header and Navigation */
+
+header {
+    background-color: #0B0B0B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #A0DB7A;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Page Heading */
+
+.hero {
+    background-color: #F79AAE;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Buttons */
+
+button {
+    background-color: #A0DB7A;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0B0B0B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer a, footer p {
+    color: white;
+}
+
+/* ==================================
+   CALCULATOR PAGE - Mansoor
+   ================================== */
+
+/* Two columns on desktop */
+
+.calc-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Calculator boxes */
+
+.card {
+    background-color: #EFFCD9;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    background-color: #A0DB7A;
+    padding: 10px;
+}
+
+/* Form inputs */
+
+.card label {
+    display: block;
+    margin-top: 15px;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Calculate and Reset buttons */
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Results section */
+
+.result-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.chart-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #FBCED7;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.total {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Calculator tips */
+
+.tip {
+    background-color: #FBCED7;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* CHALLENGES PAGE...
+
+/* Filter buttons */
+
+.filters {
+    padding: 20px 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Three challenge cards per row */
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+/* Individual challenge card */
+
+.challenge-card {
+    background-color: #EFFCD9;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* Placeholder for future images */
+
+.challenge-image {
+    background-color: #FBCED7;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Challenge title and points */
+
+.points {
+    background-color: #FBCED7;
+    padding: 5px;
+}
+
+.challenge-card p {
+    margin-bottom: 15px;
+}
+
+/* ==================================
+   MOBILE LAYOUT
+   ================================== */
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .calc-layout {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .result-box {
+        flex-wrap: wrap;
+    }
+
+    .filters {
+        padding: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
